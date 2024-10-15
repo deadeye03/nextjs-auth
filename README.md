@@ -1,4 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Introduction
+
+This project provides user authentication using Next.js with GitHub and Google OAuth 2.0. The purpose of this authentication system is to allow users to securely authenticate using their GitHub or Google accounts. The user details are stored in a MongoDB database for persistent storage.
+
+## Prerequisites
+  Before running the project, make sure you have the following installed on your system:
+
+  Node.js (version 14 or higher)
+  MongoDB (either locally or through a service like MongoDB Atlas)
+  Git
+  Next.js (version 14 or higher)
+
+Environment Variables
+You will need to create a .env.local file in the root of the project and define the following environment variables:
+
+# MongoDB connection string
+DATABASE=<your_mongodb_connection_uri>
+
+# GitHub OAuth credentials
+GITHUB_ID=<your_github_client_id>
+GITHUB_SECRET=<your_github_client_secret>
+
+# Google OAuth credentials
+GOOGLE_ID=<your_google_client_id>
+GOOGLE_SECRET=<your_google_client_secret>
+
+## Features
+<User authentication using GitHub and Google OAuth 2.0.>
+<Beautiful and user-friendly login and signup pages.>
+<Secure storage of user data in MongoDB.>
 
 ## Getting Started
 

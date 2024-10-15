@@ -1,0 +1,478 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+@media screen and (max-width: 800px){
+  
+}
+@media screen and (max-width: 600px){
+  html{
+    font-size: 52.7%;
+  }
+
+  .course__data{
+    width: 100% !important;
+  }
+  .font-800{
+    font-weight: 800 !important;
+  }
+  .card__data{
+    font-size: 12.5px !important;
+    margin-bottom: 15px;
+  }
+  .course__box{
+    width: 100% !important;
+  }
+  .topic{
+    column-gap: 1rem !important;
+  }
+  .login{
+    display: none !important;
+  }
+  .login-bg{
+    background: radial-gradient(ellipse at center, #a90329 0%,#8f0222 82%,#8f0222 86%,#6d0019 100%);
+    width: 552px;
+    height: 427px;
+    right: -71px;
+    position: absolute;
+    top: -32px;
+    border-radius: 190px;
+  }
+  .signin__form{
+    /* width: 90% !important; */
+    justify-content: center !important;
+    align-items: center  !important;
+    padding-left: 120px !important;
+ 
+  }
+  /* .signin__form:target{
+    opacity: 1;
+    visibility: visible;
+  } */
+  .signin__form input{
+    color: white !important;
+  }
+  .forgot__passwrord{
+    color: white !important;
+  }
+  .mobile__button{
+    /* background: white;
+    color: black; */
+    padding: 1rem 3rem;
+    border-radius: 100rem;
+    z-index: 10;
+    box-shadow: 1px 1px 1px 1px rgb(0 0 0 / 32%)
+  }
+  .mobile__signup--button{
+    padding: 5px 5rem !important;
+  }
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+.courses {
+  box-shadow: 0rem 3px 1rem rgba(0, 0, 0, 0.251);
+}
+
+.slider {
+  height: 37.71rem;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  z-index: -10;
+  transition: all 0.2s;
+}
+.slide--btn {
+  background: black;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.user .user__logo {
+  height: 5rem;
+  width: 5rem;
+}
+
+.lh-n {
+  line-height: normal;
+}
+
+.card {
+  width: 28rem;
+}
+.card__data {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 1.8rem;
+}
+/* .card__container {
+  max-height: 120rem;
+} */
+
+.footer {
+  padding: 4rem;
+  margin-top: 4rem 0;
+}
+.footer__nav {
+  font-size: 1.6rem;
+}
+
+.course__data {
+  width: 74rem;
+}
+.course__box {
+  width: 35.2rem;
+}
+.course__summary {
+  background-color: #2d2f31;
+}
+.course__subscription {
+  background-color: #a435f0;
+}
+.course__description li {
+  margin-bottom: 1rem;
+}
+
+.topic {
+  column-count: 2;
+  column-gap: 6rem;
+  font-weight: 500;
+}
+.topic > * {
+  margin-bottom: 1.5rem;
+}
+
+.review--star {
+  display: flex;
+}
+.review--star__star {
+  height: 2rem;
+  width: 2rem;
+  margin-right: 1px;
+}
+
+.section-reviews {
+  margin-top: calc(0px - var(--section-rotate));
+  padding: calc(5rem + var(--section-rotate)) 0;
+  position: relative;
+  z-index: 1000;
+  background: -webkit-gradient(linear, left top, right bottom, from(#7dd56f), to(#28b487));
+  background: linear-gradient(to right bottom, #7dd56f, #28b487);
+  clip-path: polygon(0 var(--section-rotate), 100% 0, 100% calc(100% - var(--section-rotate)), 0 100%);
+  -webkit-clip-path: polygon(0 var(--section-rotate), 100% 0, 100% calc(100% - var(--section-rotate)), 0 100%);
+}
+
+.reviews {
+  padding: 5rem 0;
+  display: grid;
+  grid-column-gap: 6rem;
+  grid-auto-flow: column;
+  overflow-x: scroll;
+  -ms-scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory;
+}
+
+.reviews__card {
+  width: 30rem;
+  padding: 4rem;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  scroll-snap-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.reviews:before,
+.reviews:after {
+  content: "";
+  width: 2rem;
+}
+
+.reviews__avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.reviews__avatar-img {
+  height: 4.5rem;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+}
+
+.reviews__user {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.reviews__text {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.reviews__rating {
+  margin-top: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reviews__star {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 1px;
+}
+
+.reviews__star--active {
+  fill: #55c57a;
+}
+
+.reviews__star--inactive {
+  fill: #bbb;
+}
+
+.header__primary--1 {
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+.header__primary--2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.header__primary--3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.header__secondary--1 {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+.header__secondary--2 {
+  font-size: 2rem;
+  font-weight: 400;
+  
+}
+
+.header__secondary--3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.rating-c {
+  color: #f69c08;
+}
+
+.text-ul {
+  color: #c0c4fc;
+}
+
+/* LOGIN STYLING */
+
+.login{
+  /* height: 80vh; */
+  padding: 3rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login__box{
+  width: 80%;
+  /* height: 70vh; */
+  display: flex;
+  position: relative;
+  background-color: #e6e2e2;
+  border-radius: 20px;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.459);
+
+}
+.sign__box{
+  width: 50%;
+  height: 100%;
+}
+.signin{
+  display: flex;
+  flex-direction: column;
+  padding: 30px 6rem;
+  align-items: center;
+  gap: 8px;
+}
+.signin__method{
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  align-items: center;
+}
+.signin__method li{
+  padding: 4px;
+  
+}
+.login__option{
+  text-decoration: none;
+}
+.login__logo{
+  height: 32px;
+  width: 32px;
+}
+.signin__form{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  align-items: center;
+
+}
+.signin__form input{
+  font-size: 16px;
+  padding: 8px;
+  background-color: rgba(74, 73, 73, 0.233);
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 0.548);
+}
+.signin__form input:focus{
+  outline: none;
+}
+.signin__form input::placeholder{
+  color: rgba(58, 58, 58, 0.468);
+}
+.forgot__passwrord{
+  text-decoration: none;
+  font-size: 16px;
+  color:rgba(0, 0, 0, 0.326);
+  font-weight: 500;
+}
+.forgot__passwrord:hover{
+  color:rgba(0, 0, 0, 0.685);
+  font-weight: 700;
+}
+.submit__btn{
+  box-shadow: inset 10px 10px 20px rgba(0, 0, 0, 0.361) !important;
+  background-color: orangered !important;
+}
+.signup{
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 6rem;
+  align-items: center;
+  gap: 8px;
+}
+.login__bgc{
+  width: 50%;
+  height: 100%;
+  background-image: linear-gradient(to bottom right, rgb(240, 125, 83),orangered);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transition: all .5s ease-out;
+
+}
+.user__meassage{
+  color: white;
+  text-align: center;
+}
+.head-pirmary{
+  font-size: xxx-large;
+  text-shadow:1px 1px 2px #483f3f;
+}
+.message{
+  font-size: large;
+  text-shadow:2px 1px 3px #483f3f96;
+}
+.sign__btn{
+  padding: 13px 5rem;
+  background-color: transparent;
+  border: 2px solid #483f3f;
+  border-radius: 50px;
+  color: white;
+  font-size: 20px;
+  box-shadow:  0px 10px 20px #0000004e;
+}
+.sign__btn:hover{
+  transform: translateY(-3px);
+  box-shadow:  2px 15px 20px #0000004e;  
+}
+.sign__btn:active{
+  transform: translateY(-1px);
+  box-shadow:  0px 5px 20px #0000004e;
+}
+
+.details__form input{
+  font-size: 16px;
+  padding: 1rem;
+  background-color: rgba(74, 73, 73, 0.233);
+  border: none;
+  width: 70%;
+  border-radius: 5px;
+  color: rgba(206, 200, 200, 0.548);
+}
+.details__form label{
+  font-size: 15px;
+
+}
+.gradient-bg{
+  background-image: linear-gradient(to left,#ec4899,#a855f7);
+}
+.course__form input{
+  color: black;
+}
+.course__between{
+  display: flex;
+  justify-content: space-between;
+}
+.course__between span{
+  font-weight: 900;
+  font-size: 20px;
+}
+
+
+
