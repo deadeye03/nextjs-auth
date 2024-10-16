@@ -2,7 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import SessionWrapper from "@/components/sessionWrapper";
 import Navbar from "@/components/Navbar";
-
+import { Analytics } from "@vercel/analytics/react"
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -32,6 +32,7 @@ export default function RootLayout({ children }) {
           {children}
 
           </main>
+          <Analytics/>
         </body>
       </html>
     </SessionWrapper>
